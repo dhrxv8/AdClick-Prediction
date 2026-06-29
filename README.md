@@ -1,61 +1,65 @@
-# AdClick-Prediction
-Utilizing logistic regression to unveil insights and predict user engagement with online advertisements, based on comprehensive behavioral and demographic data.
+# AdClick Prediction
 
-# AdClick Predictor
-
-Utilizing logistic regression to unveil insights and predict user engagement with online advertisements, based on comprehensive behavioral and demographic data.
+A logistic regression project that predicts whether a user is likely to click an online advertisement based on behavioral and demographic features.
 
 ## Overview
 
-The AdClick Predictor is designed to harness the power of logistic regression to analyze and predict whether an internet user will click on an advertisement. By examining features such as daily time spent on site, age, area income, and daily internet usage, this project aims to provide valuable insights for optimizing ad targeting strategies and enhancing user engagement.
+This project explores an advertising dataset and builds a classification model for ad click prediction. The analysis focuses on understanding which user attributes are associated with ad engagement and how logistic regression can be used for binary classification.
 
-## Features
+## Objective
 
-- **Predictive Modeling**: Uses logistic regression to forecast ad click-through rates.
-- **Data Analysis**: Deep dive into user behavior and demographic patterns affecting ad engagement.
-- **Insightful Visualizations**: Leverages matplotlib and seaborn for intuitive data visualization.
-- **Efficient Data Handling**: Implements pandas for data manipulation and preprocessing.
+Predict the `Clicked on Ad` outcome and identify patterns in user behavior that may help improve ad targeting strategy.
 
-## Prerequisites
+## Features Used
 
-Before you get started, ensure you have the following installed:
-- Python 
-- Pandas
+The notebook analyzes variables such as:
+
+- Daily time spent on site
+- Age
+- Area income
+- Daily internet usage
+- Gender
+- Timestamp-derived behavior patterns
+
+## Workflow
+
+1. Load and inspect the advertising dataset.
+2. Perform exploratory data analysis with pandas, Matplotlib, and Seaborn.
+3. Prepare train/test splits for model evaluation.
+4. Train a logistic regression classifier.
+5. Evaluate model performance and interpret the results.
+
+## Tech Stack
+
+- Python
+- pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Scikit-learn
+- scikit-learn
+- Jupyter Notebook
 
-## Installation
+## Project Structure
 
-Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/yourusername/AdClick-Predictor.git
+```text
+AdClick-Prediction/
+├── Logistic Regression Project.ipynb
+└── README.md
 ```
 
-Navigate to the project directory:
+## Getting Started
 
 ```bash
-cd AdClick-Predictor
+git clone https://github.com/dhrxv8/AdClick-Prediction.git
+cd AdClick-Prediction
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+jupyter notebook "Logistic Regression Project.ipynb"
 ```
 
-Install the required dependencies:
+## Notes
 
-```bash
-pip install -r requirements.txt
-```
+This is an educational machine learning project focused on classification workflow, model evaluation, and interpreting business-relevant patterns from user behavior data.
 
-## Usage
+## Author
 
-To run the project and see the predictive analysis:
-
-```bash
-python ad_click_predictor.py
-```
-
-Follow the instructions in the Jupyter Notebook (`Logistic Regression Project.ipynb`) for a step-by-step guide through the analysis and prediction process.
-
-## Contributing
-
-Contributions to enhance the AdClick Predictor are welcome. Please fork the repository and create a pull request with your improvements.
+Dhruv Rao - [GitHub](https://github.com/dhrxv8)
